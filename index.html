@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="UTF-8">
@@ -18,40 +18,58 @@
   <div class="container">
 
     <form class="row g-3 mt-3">
+      <h1>Student attendance control</h1>
 
       <div class="col-6">
         <label for="name" class="form-label">Name</label>
-        <input id="name" class="form-control" placeholder="Enter name" type="text">
+        <input id="name" class="form-control" placeholder="Enter name" type="text" required>
       </div>
       <div class="col-6">
         <label for="surname" class="form-label">Surname</label>
-        <input id="surname" class="form-control" placeholder="Enter surname" type="text">
+        <input id="surname" class="form-control" placeholder="Enter surname" type="text" required>
       </div>
       <div class="col-6">
         <label for="course" class="form-label">Course</label>
-        <input id="course" class="form-control" placeholder="Enter course" type="text">
+        <input id="course" class="form-control" placeholder="Enter course" type="number" required>
       </div>
       <div class="col-6">
         <label for="sclass" class="form-label">Class</label>
-        <input id="sclass" class="form-control" placeholder="Enter class" type="text">
+        <input id="sclass" class="form-control" placeholder="Enter class" type="text" required>
       </div>
-      <div class="col-12">
-        <div class="form-check">
-          <label for="checkTermns" class="form-check-label">Acepto los términos</label>
-          <input id="checkTermns" class="form-check-input" placeholder="Enter course" type="checkbox">
-        </div>
-      </div>
+
       <div class="col-12">
         <button style="border-radius:8px;" type="submit" id="btn-add">Add</button>
       </div>
+      <div class="col-12">
+        <button style="border-radius:8px;" type="submit" id="btn-load">Cargar Lista</button>
+      </div>
+      <div class="col-12">
+        <button style="border-radius:8px;" type="submit" id="btn-save">Guardar Lista</button>
+      </div>
+    </form>
+
+    <div class="row g-3 mt-5">
+      <div class="col">
+        <table id="dateTable" class="table table-hover table-bordered align-middle">
+          <thead>
+            <tr>
+              <th id="namet">Name</th>
+              <th id="surnamet">Surname</th>
+              <th id="courset">Course</th>
+              <th id="sclasst">Class</th>
+              <th id="delete">Delete</th>
+
+            </tr>
+
+          </thead>
+        </table>
+      </div>
+    </div>
   </div>
-  </form>
-
-  </div>
 
 
 
-  <script src="./index.js" type="text/javascript"></script>
+  <script src="index.js" type="text/javascript"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
     crossorigin="anonymous"></script>
