@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./imagenes/beewheel-icon.png">
+    <link rel="stylesheet" href="./ruleta.css">
+    <title>Bee Wheel</title>
+</head>
+
+<body>
+    <div class="container">
+        <!-- formulario -->
+        <div class="form">
+            <img src="./imagenes/Logo (1).png" id="logo" alt="Logo-bee">
+            <div class="acciones">
+                <input id="nombre" placeholder="Enter name" type="text">
+                <button id="btn-agregar">Add</button>
+                <button id="btn-reset">Delete</button>
+                <button id="borrar-ultimo">Delete last</button>
+            </div>
+        </div>
+        <!-- ruleta -->
+        <div class="roulette">
+            <div class="concursantes">
+                <canvas id="idcanvas" width="600" height="600"></canvas>
+                <br>
+                <button onclick="sortear()"><span id="idestado">Start</span></button>
+                <div class="mark-winner"></div>
+            </div>
+        </div>
+    </div>
+    <script src="./ruleta.js" type="text/javascript"></script>
+</body>
+
+</html>

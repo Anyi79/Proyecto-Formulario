@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Amaranth:ital@1&display=swap');
+
+
+
+body{
+    cursor: url(../imagenes/icons8-bee-30.png), auto;  
+    background-image: url(./imagenes/Desktop.png);
+
+}
+h1{
+    font-family: 'Amaranth', sans-serif;   
+    color: #804000;
+    text-align: center;
+    padding: 200px;
+
+
+}
+ nav{
+    font-family: 'Amaranth', sans-serif;   
+    text-align: center;
+ }
+ #logo {
+    height: 43px;
+    width: 150px;
+    margin-right: 10px;
+}
