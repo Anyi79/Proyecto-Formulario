@@ -132,3 +132,6 @@ nav{
     align-items: center;
     justify-content: center;
 }
+.btn-delete{
+    border-radius: 8px;  
+}

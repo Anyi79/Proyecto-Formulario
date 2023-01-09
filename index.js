@@ -69,6 +69,7 @@ function show() {
 
   let newDeleteCell = newDateRow.insertCell(4);
   let deleteButton = document.createElement("button");
+  deleteButton.classList.add('btn-delete');
   deleteButton.textContent = "Delete";
   newDeleteCell.appendChild(deleteButton);
 
